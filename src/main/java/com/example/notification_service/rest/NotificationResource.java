@@ -1,4 +1,4 @@
-package com.example.notification_service.controller;
+package com.example.notification_service.rest;
 
 import com.example.notification_service.dto.NotificationDto;
 import com.example.notification_service.service.EmailService;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class NotificationController {
+public class NotificationResource {
 
     @Autowired
     private final RabbitTemplate rabbitTemplate;
